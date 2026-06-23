@@ -47,9 +47,9 @@
 
 //  Do while loop
 
-let score =  1
+// let score =  1
 
-do {
-    console.log(score);
-    score++;
-} while( score <= 10)
+// do {
+//     console.log(score);
+//     score++;
+// } while( score <= 10)
