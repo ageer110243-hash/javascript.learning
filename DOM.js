@@ -21,43 +21,45 @@
 //  console.log(heading)
 
 
-const heading = document.querySelector(".heading1")
-const red = document.querySelector(".red")
-const green = document.querySelector(".green")
+// const heading = document.querySelector(".heading1")
+// const red = document.querySelector(".red")
+// const green = document.querySelector(".green")
 
 
-red.addEventListener("click", ()=>{
-    heading.innerText = "i am red"
-    heading.style.color = "red"
-})
+// red.addEventListener("click", ()=>{
+//     heading.innerText = "i am red"
+//     heading.style.color = "red"
+// })
 
 
-const changeGreenColor = ()=>{
-    heading.innerText = "i am green"
-    heading.style.color = "green"
-}
-green.addEventListener("click", changeGreenColor)
+// const changeGreenColor = ()=>{
+//     heading.innerText = "i am green"
+//     heading.style.color = "green"
+// }
+// green.addEventListener("click", changeGreenColor)
 
-const body = document.querySelector("body")
+// const body = document.querySelector("body")
 
-const changeBodyColor = ()=> {
-    let red = Math.floor(Math.random()* 255)
-    let blue = Math.floor(Math.random()* 255)
-    let green = Math.floor(Math.random()* 255)
-    console.log(red, blue, green)
+// const changeBodyColor = ()=> {
+//     let red = Math.floor(Math.random()* 255)
+//     let blue = Math.floor(Math.random()* 255)
+//     let green = Math.floor(Math.random()* 255)
+//     console.log(red, blue, green)
 
-    let color = `rgb(${red}, ${green}, ${blue})`
-    body.style.backgroundColor = color
-}
+//     let color = `rgb(${red}, ${green}, ${blue})`
+//     body.style.backgroundColor = color
+// }
 
 
 
-const bodyC = document.querySelector(".bodyC")
-bodyC.addEventListener("click", ()=>{
-    changeBodyColor()
-})
+// const bodyC = document.querySelector(".bodyC")
+// bodyC.addEventListener("click", ()=>{
+//     changeBodyColor()
+// })
 
     
+
+
 
 
 
