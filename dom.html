@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
 </head>
+
+<style>
+
+</style>
+
 <body style="background-color: #212122; color: #fff;">
-    <div class="parent">
+    <!-- <div class="parent">
         <div class="day">MON</div>
         <div class="day">TUE</div>
         <div class="day">WED</div>
@@ -14,7 +19,15 @@
         <div class="day">FRI</div>
         <div class="day">SAT</div>
         <div class="day">SUN</div>
-    </div>
+    </div> -->
+
+
+
+    <ul class=" lanuage ">
+        <li>js</li>
+        <li>css</li>
+
+    </ul>
 
 
 
@@ -23,36 +36,59 @@
 
 
     <script>
-      const parent =  document.querySelector(".parent")
-      console.log(parent)
-       console.log(parent.children[1].innerHTML)
-       for (let i = 0; i < parent.children.length; i++) {
-       console.log(parent.children[i].innerHTML);
+    //   const parent =  document.querySelector(".parent")
+    //   console.log(parent)
+    //    console.log(parent.children[1].innerHTML)
+    //    for (let i = 0; i < parent.children.length; i++) {
+    //    console.log(parent.children[i].innerHTML);
         
-       }
-    //    parent.children[1].style.color = "orange"
-    //    console.log(parent.firstElementChild.innerHTML)
-    //    console.log(parent.lastElementChild.innerHTML)
+    //    }
+    // //    parent.children[1].style.color = "orange"
+    // //    console.log(parent.firstElementChild.innerHTML)
+    // //    console.log(parent.lastElementChild.innerHTML)
 
 
-       const dayOne = document.querySelector(".day")
-       console.log(dayOne)
-       console.log(dayOne.parentElement)
-       console.log(dayOne.nextElementSibling)
+    //    const dayOne = document.querySelector(".day")
+    //    console.log(dayOne)
+    //    console.log(dayOne.parentElement)
+    //    console.log(dayOne.nextElementSibling)
 
-       console.log("nodes :", parent.childNodes)
+    //    console.log("nodes :", parent.childNodes)
 
 
 
-     const div = document.createElement("div")
-     console.log(div)
-     div.className = "main"
-     div.id = "idMain"
-     div.setAttribute("title", "generated title")
-     div.style.background = "green"
-     div.style.padding = "20px"
+    //  const div = document.createElement("div")
+    //  console.log(div)
+    //  div.className = "main"
+    //  div.id = "idMain"
+    //  div.setAttribute("title", "generated title")
+    //  div.style.background = "green"
+    //  div.style.padding = "20px"
+
+
+    addLang = (langN)=> {
+      const li = document.createElement("li")
+      li.innerHTML = langN;
+      document.querySelector(".lanuage").appendChild(li)
+
+   }
+   addLang("python")
+   addLang("Html")
+
+   addOptLang = (langN)=> {
+    const li = document.createElement("li")
+    li.appendChild(document.createTextNode(langN))
+    document.querySelector(".lanuage").appendChild(li)
+
+   }
+   addOptLang("go lang")
+
+
+   const seclang = document.querySelector("li:nth-child(2)")
+    seclang.innerHTML = "html"
         
-        
+
+
     </script>
 </body>
 
